@@ -1,0 +1,277 @@
+:root {
+    --blue: rgb(12, 43, 222);
+    --lightblue: #2e518b;
+    --blueP: #009177;
+    --yellow: #ffc107;
+    --gray: #757575;
+    --lightgray: #dfe9f3;
+}
+
+.title {
+    font-size: 30pt;
+    font-family: "Krub", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font-family: "Krub", sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.servicios {
+    text-align: center;
+}
+
+.servicios p {
+    font-size: 10pt;
+    margin: 10px 10px;
+}
+
+.servicios h3 {
+    color: var(--blueP);
+    font-size: 12pt;
+    font-weight: 200;
+}
+
+.contacto h3 {
+    color: var(--yellow);
+    font-size: 12pt;
+    font-weight: 200;
+    padding: 10px;
+}
+
+
+hr {
+    margin: 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 0px;
+}
+
+.h3 {
+    font-size: 16pt;
+    font-family: "Krub", sans-serif;
+}
+
+.section-container {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.light-gray-bckgrnd {
+    background-color: var(--lightgray);
+}
+
+.inline-disp {
+    display: inline;
+}
+
+.menu {
+    display: flex;
+    width: auto;
+    background-color: var(--blueP);
+    justify-content: space-between;
+    /*padding-bottom: 8px;*/
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: "Krub", sans-serif;
+    font-weight: 700;
+
+    /*
+    centra y estira cada a (enlace)*/
+    text-align: center;
+    flex-direction: column;
+    flex: 1 1 0;
+    padding: 1rem;
+}
+
+.menu a:hover {
+    background-color: var(--yellow);
+    color: black;
+}
+
+.background-img {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+}
+
+.background-img::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location {
+    display: inline;
+    color: white;
+    font-size: 12pt;
+    font-weight: 50;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.white-color {
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.flex-container div {
+    /*font-size: 20px;*/
+    width: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.txt-align-start{
+    text-align: start;
+}
+
+.svg-space {
+    margin-top: 24px;
+}
+
+.yellow-dot {
+    height: 75px;
+    width: 75px;
+    background-color: var(--yellow);
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.form-container {
+    background-color: var(--gray);
+    color: white;
+    width: 500px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.form-input-row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.form-button-container {
+    margin-right: 20px;
+    text-align: end;
+}
+
+.form-input-box-sm {
+    display: inline-block;
+    height: fit-content;
+    width: 220px;
+    margin: 5px auto;
+}
+
+.form-input-box-lg {
+    display: inline-block;
+    height: fit-content;
+    width: 470px;
+    margin: 5px 15px;
+}
+
+.form-container label{
+    display: block;
+    text-align: start;
+    font-size: 10pt;
+    font-family: "Krub", sans-serif;
+    margin: 5px 0px;
+    
+}
+
+input[type=text], input[type=email]{
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.form-input-box-lg input{
+    padding: 5px 5px;
+    width: 455px;
+}
+
+.form-input-box-lg textarea{
+    padding: 5px 5px;
+    width: 455px;
+    height: 200px;
+}
+
+.button {
+    border: 0px;
+    text-decoration: none;
+    background-color: var(--blueP);
+    color: white;
+    padding: 10px 20px;
+}
+
+.button:hover{
+    border: 0px;
+    text-decoration: none;
+    background-color: var(--lightblue);
+    color: var(--lightgray);
+}
+
+footer p{
+    font-size: 9pt;
+}
